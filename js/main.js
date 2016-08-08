@@ -125,6 +125,8 @@ window.onload =function(){
 	// 轮播图
 	;(function(){
 		var oMy =  document.getElementById('myself');
+		var oPrev = document.getElementById('prev');
+		var oNext = document.getElementById('next');
 		var oBtn = oMy.children[0];
 		var oUl = oMy.children[1];
 		var aLi = oUl.children;
@@ -163,6 +165,15 @@ window.onload =function(){
 			aBtn[iNow].className='on';
 			move(aLi[iNow],{'opacity':1});
 		}
+		oPrev.onclick = prev;
+		function prev(){
+			iNow--;
+			if(iNow==-1){
+				iNow=aBtn.length-1;
+			}
+			tab();
+		}
+		oNext.onclick = next;
 		function next(){
 			iNow++;
 			if(iNow==aBtn.length){
