@@ -1,0 +1,222 @@
+body{ background: url(../image/con_bg.jpg) center 55px no-repeat;}
+.praise{ width: 35px; height: 122px; background: url(../image/praise.png) 0 0 no-repeat; position: fixed; left: 15px; top: 56%; z-index: 99;}
+.topbar{ width: 100%; min-width: 1000px; height: 55px; background: #f8f7f7 url(../image/line.png) center bottom no-repeat; }
+.logo{ width: 99px; height: 36px; background: url(../image/logo_white.png) -4px -5px no-repeat; text-indent: -999em; margin-top: 6px; margin-left: 14px; border-right: 1px solid #cecece;}
+.login-left{ height: 50px; line-height: 50px; font-size: 12px;}
+.login-left li{ float: left; padding: 0 10px; overflow: hidden;}
+.login-left li em{ float: left; width: 24px; height: 24px; background: url(../image/cyou_icons.png) no-repeat; margin-right: 6px; margin-top: 13px;}
+.login-left li .lo1{ background-position: -139px 0 ;}
+.login-left li .lo2{ background-position: -189px 0 ;}
+.login-left li .lo3{ background-position: 0 -104px ;}
+.login-left li span{ float: left;}
+.login-right{ height: 50px; line-height: 50px; font-size: 12px;}
+.login-right li{ float: left; border-left: 1px solid #e1e1e1; position: relative;}
+.login-right .last{ border-right: 1px solid #e1e1e1;}
+.login-right li .tit{ display: block; padding: 0 25px;}
+.login-right li .tit:hover{ color: #86459c;}
+.login-right li i{ width: 7px; height: 4px; background: url(../image/cyou_icons.png) -206px -148px no-repeat; position: absolute; top: 23px; right: 15px;}
+.login-right li .box{ width: 328px; height: 267px; border: 1px solid #bbb; background: #f2f2f2; z-index: 1; display: none;}
+.login-right li .box .dl a:hover{ color: #86459c;}
+.login-right li .box .dl{ width: 328px; height: 67px; position: relative;}
+.login-right li .box .dl dt{ height: 32px; border-bottom: 1px solid #dfdfdf; font-size: 12px; font-weight: bold; padding-left: 45px; line-height: 32px; color: #4a4a4a;}
+.login-right li .box .dl em{ width: 24px; height: 24px;  position: absolute; top: 4px; left: 18px;}
+.login-right li .box .dl-1 em{ background: url(../image/cyou_icons.png) -114px 0 no-repeat;}
+.login-right li .box .dl-2 em{ background: url(../image/cyou_sprite1.png) 0 0 no-repeat;}
+.login-right li .box .dl-3 em{ background: url(../image/cyou_icons.png) -189px 0 no-repeat;}
+.login-right li .box .dl-4 em{ background: url(../image/cyou_sprite2.png) 0 0 no-repeat;}
+.login-right li .box .dl dd{ float: left; height: 33px; width: 108px; border-right: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf; background: #fff;}
+.login-right li .box .dl dd a{ font-size: 12px; display: block; line-height: 33px; text-align: center; color: #333; }
+.login-right li .box .dl .dd{ border-right: none;}
+.login-right li .box1{ position: absolute; left: -1px; top: 50px;}
+.login-right li .box2{ position: absolute; left: -1px; top: 50px;}
+.login-right li .box3{ position: absolute; right: -1px; top: 50px;}
+.nav{ width: 100%; min-width: 1000px; height: 110px;}
+.soul{ width: 190px; height: 110px; background: url(../image/logo.gif) 0 0 no-repeat; float: left;}
+.nav-list{ width: 774px; height: 110px; float: right;}
+.nav-list ul li{ width: 73px; height: 110px; float: left; margin-left: 18px; }
+.nav-list ul .li-1{ width: 33px; margin-left: 12px; margin-right: 1px;}
+.nav-list ul .li-2{ margin-left: 21px;}
+.nav-list ul .li-3{ margin-left: 15px;}
+.nav-list .nav-box{ height: 110px; background: url(../image/nav_new_hover.jpg) 0 0 no-repeat;}
+.nav-list .nav-a{ width: 73px; height: 60px; padding-top: 23px; display: block;}
+.nav-list .nav-a a{ color: #fff; font-size: 12px; display: block; text-align: center; line-height: 25px; position: relative; }
+.nav-list .nav-a a:hover{ color: #f3ca90; text-decoration: underline; background: url(../image/top_btn.png) 5px center no-repeat;}
+.nav-child{ width: 1000px; height: 110px; background: url(../image/nav_bg.jpg) 0 0 no-repeat;}
+.banner{ width: 100%; min-width: 1000px; height: 441px;}
+.banner-child{ width: 1000px; height: 441px; background: url(../image/header_main1.png) no-repeat; background-size: 100%;}
+.content{ width: 100%; min-width: 1000px; height: 413px;}
+.con-left{ width: 617px; height: 414px;}
+.download{ width: 617px; height: 109px;}
+.download ul li{ float: left;}
+.download ul li a{ width: 101px; height: 109px; background: url(../image/sprite-1.jpg) no-repeat; display: block;}
+.download ul li .btn-1{ width: 215px; background-position: 0 0 ;}
+.download ul li .btn-2{ background-position: -216px 0 ;}
+.download ul li .btn-3{ background-position: -317px 0 ;}
+.download ul li .btn-4{ width: 100px; background-position: -418px 0 ;}
+.download ul li .btn-5{ width: 100px; background-position: -517px 0 ;}
+.download ul li .btn-1:hover{ background-position: 0 -110px ;}
+.download ul li .btn-2:hover{ background-position: -216px -110px ;}
+.download ul li .btn-3:hover{ background-position: -317px -110px ;}
+.download ul li .btn-4:hover{ width: 100px; background-position: -418px -110px ;}
+.download ul li .btn-5:hover{ width: 100px; background-position: -517px -110px ;}
+.picture{ width: 616px; height: 303px; border: 1px solid #433b4f; border-top: none; position: relative; }
+.picture .tu-btn{ width: 100px; height: 20px; position: absolute; bottom: 0; right: 0;}
+.picture .tu-btn li{ float: left; width: 14px; height: 14px; background: #3a3e47; margin-right: 4px; cursor: pointer; border-radius: 15px;}
+.picture .tu-btn .on{ background: #d0290a;}
+.picture .tu-img li{ display: none; }
+.picture .tu-img li img{ width:616px; height: 303px; }
+.picture .official{ width: 27px; height: 63px; background: url(../image/slider_main.png) 0 0 no-repeat; position: absolute; left: 10px; top: 10px;}
+.picture .official:hover{ background: url(../image/slider_h_main.png) 0 0 no-repeat;}
+.picture .media{ width: 27px; height: 63px; background: url(../image/slider_media.png) 0 0 no-repeat; position: absolute; left: 10px; top: 83px;}
+.picture .media:hover{ background: url(../image/slider_h_media.png) 0 0 no-repeat;}
+.con-right{ width: 382px; height: 414px; background: url(../image/header_main1.png) 0 0 no-repeat;}
+.recommend{ width: 382px; height: 102px;}
+.rec-top{ width: 361px; height: 53px; margin-top: 7px; margin-left: 12px; padding-top: 6px; background: url(../image/sever.png) 0 0 no-repeat;}
+.rec-top p{ color: #fff; font-size: 12px; margin-left: 84px; line-height: 22px;}
+.rec-top p a{ color: #f00000; padding-left: 12px; padding-right: 7px;}
+.rec-bottom{ width: 382px; height: 42px;  border-top:1px solid #1d193e; background: url(../image/update_bg.png) repeat-x; }
+.update{ width: 190px; height: 42px;}
+.update a{ float: left; padding-left: 5px; font-size: 12px; color: #a0abd0; line-height: 42px; display: block; }
+.update a em{ color: #f93d1a; padding: 0 3px; text-decoration: underline;}
+.update i{ float: left; width: 14px; height: 14px; background: url(../image/sprite-1.jpg) -603px -227px no-repeat; margin-left: 3px; margin-top: 15px;}
+.attention{ width: 191px; height: 42px; border-right: 1px solid #5e626d; }
+.attention span{ float: left; font-size: 12px; color: #a0aacf; line-height: 42px; padding-right: 8px;}
+.attention ul li{ float: left;  }
+.attention ul li a{ width: 41px; height: 41px; background: url(../image/sprite-2.jpg) no-repeat; display: block;}
+.attention ul li .att1{ background-position: -241px -220px;}
+.attention ul li .att2{ background-position: -289px -220px;}
+.attention ul li .att3{ background-position: -337px -220px;}
+.attention ul li .att1:hover { background-position: -398px -221px;}
+.attention ul li .att2:hover { background-position: -442px -221px;}
+.attention ul li .att3:hover { background-position: -486px -221px;}
+.news{ width: 383px; height: 305px;}
+.news-tit{ width: 381px; height: 58px; border-top: 1px solid #322e3f; border-right: 1px solid #322e3f; background: url(../image/sprite-2.jpg) 0 -262px no-repeat;}
+.news-tit ul li{ float: left; width: 94px; height: 58px; }
+.news-tit ul .on{ background: url(../image/sprite-2.jpg) -286px -320px no-repeat; }
+.news-tit ul li a{ display: block; text-align: center;  line-height: 58px; color: #fff; font-weight: bold; font-size: 13px;}
+.news-tit ul li a:hover{ color: #e93d03;}
+.news-con{ width: 382px; height: 244px; background: #322e3f;}
+.news-con ul{ padding-top: 17px; height: 205px;}
+.news-con li{ display: none; height: 205px;}
+.news-con span{ display: block; width: 347px; height: 33px; margin: 0 17px; background: url(../image/sprite-2.jpg) 0 -377px no-repeat; color: #ff4606; text-align: center; line-height: 33px; font-weight: bold;}
+.news-con div{ width: 348px; height: 167px; margin: 0 17px; padding-top: 4px;}
+.news-con div p{ width: 348px; height: 27px; line-height: 27px; overflow: hidden;}
+.news-con div p a{ float: left; color: #9ca7ca; font-size: 13px; width: 294px; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+.news-con li a:hover{ color: #e93d03;}
+.news-con div p em{ float: right; color: #9ca7ca; font-size: 13px;}
+.news-con li .more{ float: right; width: 62px; height: 13px; line-height: 13px; padding-left: 20px; margin-right: 17px; font-size: 13px; color: #9ca7ca; background: url(../image/more.jpg) left center no-repeat;}
+.vocation{ width: 100%; min-width: 1000px; height: 510px; padding-top: 32px; background: #1c1a25;}
+.voca-top{ width: 1000px; height: 132px; overflow: hidden;}
+.voca-top ul{ width: 1010px;}
+.voca-top ul li{ float: left; width: 242px; height: 130px; border: 1px solid #433b4f; margin-right: 8px;}
+.voca-top ul li,.voca-top ul li a{ width: 242px; height: 130px; display: block; }
+.voca-bottom{ width: 1000px; height: 348px; padding-top: 30px;}
+.voca-pic{ width: 656px; height: 346px; border: 1px solid #433b4f;}
+.voca-btn{ width: 658px; height: 59px;}
+.voca-btn li{ float: left; width: 131px; height: 59px; }
+.voca-btn li a{ display: block; height: 59px; background: url(../image/sprite-2.jpg) no-repeat; }
+.voca-btn li .game-1{ background-position: 0 -412px;}
+.voca-btn li .game-2{ background-position: -131px -412px;}
+.voca-btn li .game-3{ background-position: -262px -412px;}
+.voca-btn li .game-4{ background-position: -393px -412px;}
+.voca-btn li .game-5{ background-position: -524px -412px;}
+.voca-btn li .game-1:hover{ background-position: 0 -471px;}
+.voca-btn li .game-2:hover{ background-position: -130px -471px;}
+.voca-btn li .game-3:hover{ background-position: -261px -471px;}
+.voca-btn li .game-4:hover{ background-position: -392px -471px;}
+.voca-btn li .game-5:hover{ background-position: -524px -471px;}
+.voca-img{ width: 656px; height: 287px;}
+.voca-img li{ display: none;}
+.voca-centre{ width: 322px; height: 348px;}
+.cen-tit{ width: 322px; height: 31px; margin-bottom: 15px;}
+.cen-tit h2{ width: 280px; line-height: 31px; padding-left: 42px; background: url(../image/sprite-2.jpg) -628px 0 no-repeat; font-size: 20px; color: #f3ca90;}
+.cen-con{ width: 320px; height: 301px; border: 1px solid #433b4f; overflow: hidden;}
+.cen-con ul width: 320px; height: 303px;}
+.cen-con ul li{ margin-bottom: 3px;}
+.cen-con ul li .cen-btn{ width: 319px; height: 25px; background: url(../image/sprite-2.jpg) 0 -530px no-repeat; margin-bottom: 3px;}
+.cen-con ul li .cenL{ float: left; height: 25px; line-height: 25px; color: #a5add1; font-size: 12px; padding-left: 28px;}
+.cen-con ul li .cenR{ float: right; height: 25px; line-height: 25px; color: #a5add1; font-size: 12px; padding-right: 12px;}
+.cen-con ul li .cen-img{ width: 319px; height: 149px; position: relative; display: none; margin-bottom: 10px;}
+.cen-con ul li .cen-img img{ display:block; width: 319px; height: 149px;}
+.cen-con ul li .mask{ width: 320px; height: 36px; background: #000; opacity: 0.5; fliter:alpha(opacity=50); position: absolute; left: 0; bottom: 0;}
+.cen-con ul li i{ float: left; font-size: 12px; line-height: 36px; }
+.cen-con ul li i a{ color: #fff; padding-left: 5px;}
+.cen-con ul li em{ float: right; font-size: 12px; line-height: 36px;}
+.cen-con ul li em a{ color: #a997c3; padding-right: 15px; padding-left: 20px; background: url(../image/smile.png) left center no-repeat;}
+.player{ width: 100%; min-width: 1000px; height: 783px; padding-top: 30px; background: url(../image/player_bg.png);}
+.pl-left{ width: 215px; height: 783px;}
+.pl-L1{ width: 215px; height: 189px; background: url(../image/sprite-2.jpg) 0 -555px no-repeat;}
+.pl-L1 h2{ font-size: 13px; color: #f3ca90; text-align: center; line-height: 50px;}
+.pl-L1 ul{ width: 188px; height: 139px; margin: 0 auto;}
+.pl-L1 ul li{ width: 94px; float: left;}
+.pl-L1 ul li a{ display: block; font-size: 13px; color: #9587ab; line-height: 28px; padding-left: 12px;}
+.pl-L1 ul li a:hover{ text-decoration: underline; color: #f3ca90;}
+.pl-L2{ width: 215px; height: 262px; padding-top: 23px; position: relative;}
+.pl-L2 li{ display: none;}
+.pl-L2 li a,.pl-L2 li img{ display: block; width: 215px; height: 262px;}
+.pl-L2 em{ width: 9px; height: 15px; position: absolute; top: 116px; cursor: pointer;}
+.pl-L2 .prev{ background: url(../image/prev.png) 0 0 no-repeat; left: 5px;}
+.pl-L2 .next{ background: url(../image/next.png) 0 0 no-repeat; right: 5px;}
+.pl-L3{ width: 215px; height: 309px;}
+.prefecture{ width: 205px; height: 36px; border: 5px solid #1a191e; border-top: 2px solid #1a191e; border-bottom: 3px solid #1a191e; position: relative;}
+.prefecture span{ width: 205px; height: 36px; background: url(../image/sprite-2.jpg) -451px -273px no-repeat; cursor: pointer; display: block; line-height: 36px; text-align: center; color: #9587ab;}
+.prefecture span:hover{ background: url(../image/sprite-2.jpg) -451px -310px no-repeat;}
+.prefecture div{ width: 100px; height: 110px; position: absolute; top: 35px; left: 52px; background: url(../image/player_bg.png); border-radius:0 0 20px 20px; }
+.prefecture div a{ font-size: 13px; color: #f9beac; display: block; text-align: center; line-height: 25px;}
+.prefecture div a:hover{ text-decoration: underline;}
+.survey{ width: 215px; height: 248px; background: url(../image/examen.jpg) 0 0 no-repeat; display: block;}
+.survey:hover{ background: url(../image/examen.jpg) -215px 0 no-repeat;}
+.pl-center{ width: 424px; height: 783px; margin-left: 19px; margin-right: 20px;}
+.exchange{ width: 424px; height: 347px;}
+.exch-tit{ width: 424px; height: 31px; margin-bottom: 11px;}
+.exch-tit h2{ width: 375px; line-height: 31px; padding-left: 49px; background: url(../image/sprite-2.jpg) -607px -349px no-repeat; font-size: 20px; color: #f3ca90;}
+.exch-con{ width: 424px; height: 305px; position: relative;}
+.message{ width: 72px; height: 48px; padding-left: 36px; border-left: 1px solid #433b4f; border-bottom: 1px solid #433b4f; font-size: 14px; line-height: 48px; color: #a295b7; position: absolute; top: 0; right: 1px; background: url(../image/more.jpg) 20px center no-repeat;}
+.exch-btn{ width: 424px; height: 48px;}
+.exch-btn ul li{ float: left; width: 104px; height: 48px; border-top: 1px solid #433b4f; border-left: 1px solid #433b4f;text-align: center;}
+.exch-btn ul li a{ color: #a295b7; line-height: 48px; }
+.exch-btn ul li a:hover{ color: #fff; }
+.exch-btn ul .on{ background: #322b3c;}
+.exch-img{ width: 422px; height: 256px; border:1px solid #433b4f; border-top: none; background: #322b3c;}
+.exch-img li{ display: none; width: 422px; height: 256px; overflow: hidden;}
+.exch-img .exch-L{ width: 105px; height: 197px; border: 1px solid #433b4f; margin-left: 16px; margin-top: 23px;}
+.exch-img .matter{ width: 285px; height: 240px; margin-top: 23px; margin-left: 14px;}
+.exch-img .matter p{ line-height: 26px;}
+.exch-img .matter p a{ font-size: 14px; color: #a295b7;}
+.exch-img .matter p a:hover{ color: #f3ca90;}
+.media{ width: 424px; height: 352px; margin-top: 37px;}
+.media .exch-tit{ width: 424px; height: 31px; margin-bottom: 16px;}
+.media .exch-tit h2{ background: url(../image/sprite-2.jpg) -613px -381px no-repeat;}
+.pl-right{ width: 322px; height: 783px;}
+.date{ width: 424px; height: 347px;}
+.date .exch-tit h2{ background: url(../image/sprite-2.jpg) -628px -39px no-repeat;}
+.data-con{ width: 321px; height: 303px; border: 1px solid #594f67; }
+.data-con ul{ margin-bottom: 5px;}
+.data-con li{ width: 286px; height: 58px; border-bottom:1px dotted #594f67; margin: 0 auto; }
+.data-con .last{ border-bottom: none;}
+.data-con li span{ font-size: 13px; line-height: 26px; display: block; margin-top: 16px;}
+.data-con li .left{ background:#594f67; text-align: center; width: 70px; height: 26px; color: #fff; padding: 0 5px; position: relative;}
+.data-con li .left i{ width: 8px; height: 10px; background: url(../image/jt.png) no-repeat; position: absolute; top: 7px; right: -8px;}
+.data-con li .right a{ color: #594f67; float: left; font-size: 12px;}
+.data-con li .right a:hover{ color: #f3ca90;}
+.data-con li .right em{ float: left; font-size: 12px; color: #594f67; padding: 0 1px;}
+.data-con .site{ display: block; width: 279px; height: 39px; border: 3px solid #594f67; line-height: 39px; text-align: center; color: #b1a1ca; font-size: 20px; margin: 0 auto;}
+.vision{ width: 424px; height: 352px; margin-top: 37px;}
+.vision .exch-tit{ width: 322px; height: 31px; margin-bottom: 16px;}
+.vision .exch-tit h2{ background: url(../image/sprite-2.jpg) -623px -78px no-repeat;}
+.vision .exch-con,.vision .exch-btn,.vision .exch-img{ width: 322px;}
+.vision .exch-img ul{ padding-top: 10px;}
+.vision .exch-img li{ width: 322px; height: 256px;}
+.vision .exch-img li a{ width: 137px; height: 90px; float: left; margin: 10px;}
+.vision .message{ right: 3px;}
+.footer{ width: 100%; min-width: 1000px; height: 144px; background: url(../image/player_bg.png);}login-right fl
+.footer .title{ width: 893px; height: 23px; margin: 0 auto; background: url(../image/game_anc.jpg) 0 -12px no-repeat;}
+.footer .title h2{ font-size: 15px; color: #a295b7; text-align: center; padding-right: 8px;}
+.footer p{ font-size: 15px;  color: #a295b7; text-align: center;  line-height: 32px;}
+.foot-line{ width: 100%; height: 10px; background: url(../image/foot_line.png) 0 -55px no-repeat; margin-top: 32px;}
+.copyright{ width: 100%; min-width: 1000px; height: 100px; background: #181818;}
+.copy-left{ width: 190px; height: 100px; margin-left: 54px; background: url(../image/copy-L.png) 0 0 no-repeat;}
+.copy-right{ width: 745px; height: 100px;}
+.copy-right span{ display: block; font-size: 12px; color: #535353;  line-height: 14px;  margin-top: 27px;}
+.copy-right span a{ color: #535353; }
+.copy-right p{ font-size: 12px; color: #767676; line-height: 20px; margin-top: 10px;}

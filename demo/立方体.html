@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		*{ margin: 0; padding: 0; }
+		body{ background: url(img/bgslider-2.jpg); background-size: cover; }
+		.box{ position: relative; width: 200px; height: 200px; margin: 100px auto; transform: perspective(1200px) rotateY(0deg) rotateX(0deg); /*transition: 5s all linear;*/ transform-style: preserve-3d;  }
+		.box div{ width: 100%; height: 100%; position: absolute; left: 0; top: 0; }
+		.front{ transform: translateZ(100px); background: rgba(255,0,0,0.8); }
+		.back{ transform: translateZ(-100px); background: rgba(0,0,255,0.8); }
+		.left{ transform: translateX(-100px) rotateY(-90deg); background: rgba(0,255,0,0.8); }
+		.right{ transform: translateX(100px) rotateY(90deg); background: rgba(0,255,255,0.8); }
+		.top{ transform: translateY(-100px) rotateX(90deg); background: rgba(255,255,0,0.8); }
+		.bottom{ transform: translateY(100px) rotateX(-90deg); background: rgba(255,0,255,0.8); }
+		.tray{ width: 400px; height: 80px; background: #ccc; margin: 0px auto; border-radius: 50%; box-shadow: 3px 3px 0 #666;}
+	</style>
+	<script>
+		window.onload =function(){
+			var oBox = document.querySelector('.box');
+			var bTop=bBot=bLeft=bRight=false;
+			var x = 0;
+			var y = 0;
+			setInterval(function(){
+				if(bLeft){
+					y -= 10;
+				}
+				if(bRight){
+					y += 10;
+				}
+				if(bTop){
+					x += 10;
+				}
+				if(bBot){
+					x -= 10;
+				}
+				oBox.style.transform='perspective(1200px) rotateX('+x+'deg) rotateY('+y+'deg)';
+			},30);
+			// 键盘移动
+			document.onkeydown =function(ev){
+				var keyCode = ev.keyCode;
+				if(keyCode==37){
+					bLeft=true;;
+				}
+				if(keyCode==38){
+                    bTop=true;
+				}
+				if(keyCode==39){
+					bRight=true;
+				}
+				if(keyCode==40){
+					bBot=true;
+				}
+
+			}
+			document.onkeyup =function(ev){
+				var keyCode = ev.keyCode;
+				if(keyCode==37){
+					bLeft=false;;
+				}
+				if(keyCode==38){
+                    bTop=false;
+				}
+				if(keyCode==39){
+					bRight=false;
+				}
+				if(keyCode==40){
+					bBot=false;
+				}
+
+			}
+			// 鼠标移动
+			document.onmousedown =function(ev){
+				var disX = ev.clientX - y;
+				var disY = ev.clientY - x;
+				document.onmousemove =function(ev){
+					y = ev.clientX - disX;
+					x = ev.clientY - disY;
+					oBox.style.transform='perspective(1200px) rotateX('+x+'deg) rotateY('+y+'deg)';
+				}
+				document.onmouseup =function(){
+					document.onmousemove=null;
+					document.onmouseup=null;
+					oBox.releaseCapture && oBox.releaseCapture();
+				}
+				oBox.setCapture && oBox.setCapture();
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="front"></div>
+		<div class="back"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
+	</div>
+	<div class="tray"></div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.com-topbar{ width: 100%; min-width: 1200px; height: 30px; line-height: 30px; border-bottom: 1px solid #eee; background: #fff;}
+.com-topbar ul li{ float: left; display: inline-block; text-align: center;}
+.com-topbar a{ border-right: 1px dotted #ccc; padding: 0 15px; height: 20px; line-height: 20px; display: inline-block;}
+.com-topbar em{ width: 24px; height: 16px;background: url(../img/mls_icons.png) no-repeat; padding: 1px 12px;}
+.com-topbar .weixin{ width: 22px; height: 16px; background: url(../img/wx.png) 0 0 no-repeat; padding: 1px 11px;}
+.com-topbar .qq{ background-position:-184px -21px; }
+.com-topbar .cart{ background-position:0 -163px; }
+.com-topbar .cart-num{ color: #fff; background: #ff6479; padding: 0 6px; }
+.com-topbar .order{ background-position:-217px -45px; }
+.com-topbar .imember{ width: 22px; height: 16px; background: url(../img/vip.png) 0 0 no-repeat; padding: 1px 11px;}
+.com-topbar .mob{ background-position:-164px -45px; }
+.com-topbar .arrow{ display: inline-block; width: 10px; height: 6px; background-position:-20px -68px; padding: 0;}
+.com-search{width: 100%; min-width: 1200px; height: 120px; background: #fff;}
+.com-search .logo{ width: 117px; height: 43px; float: left; background: url(../img/logo.png) 0 0 no-repeat; margin-top: 40px; margin-right: 15px;}
+.com-search .sublogo{ width: 144px; height: 43px; float: left; background: url(../img/sublogo.png) 0 0 no-repeat; margin-top: 40px; margin-right: 84px;}
+.com-search .search{ width: 520px; height: 80px; float: left; margin-top: 21px; }
+.com-search .search-tab{ width: 520px; height: 24px;}
+.com-search .search-tab span{ width: 56px; line-height: 24px;background: #f2f2f2; text-align: center; cursor: pointer; float: left; }
+.com-search .search-tab .active{ background: #f69; color: #fff;}
+.com-search .search-box{ width: 520px; height: 30px;}
+.com-search .search-txt{ float: left; border: 2px solid #f69; line-height: 28px; padding-left: 8px; width: 437px; height: 28px; color: #757575;}
+.com-search .search-btn{ float: left;width: 70px; height: 32px; background: #f69 url(../img/search.png) center no-repeat; cursor: pointer;}
+.com-search .hotword{ padding-top: 12px;}
+.com-search .hotword a{ float: left; padding-right: 5px;}
+.com-search .higo{ width: 160px; height: 104px; float: right; background: url(../img/higo.jpg) 0 0 no-repeat; margin-top: 10px;}
+.com-nav{ width: 100%; min-width: 1200px; height: 48px; line-height: 48px; background: #fff; border-bottom:2px solid #ff6699; }
+.com-nav li{ float: left;}
+.com-nav li a{ height: 48px; font-weight: bold; font-size: 14px; color: #333; margin-right: 2px; padding: 0 21px;}
+.com-nav li .active{ color: #ff6699;}
+.top-wrap{ width: 100%; min-width: 1200px; height: 574px;}
+.top-list{ width: 238px; height: 572px; border: 1px solid #e6e6e6;}
+.top-list .list{ width: 198px; height: 114px; border-bottom: 1px dotted #ccc; margin-left: 20px; margin-right: 20px;}
+.top-list .last{ border-bottom: 0;}
+.top-list .list-con{ padding: 15px 0 12px;}
+.top-list h3{ height: 18px; font-size: 14px; font-weight: bold;}
+.top-list h3 a{ color: #f69; }
+.top-list p{ height: 66px; line-height: 24px; width: 190px; padding-top: 7px;}
+.top-list p a{ float: left; margin-right: 14px;}
+.top-bnr{ width: 960px; height: 420px; position: relative; }
+.top-bnr img{ width: 960px; height: 420px;}
+.top-bnr .bnr_btn{ width: 34px; height: 44px; cursor: pointer; position: absolute;}
+.top-bnr .bnr_btn_left{ background: url(../img/bnr_btn_left1.png) 0 0 no-repeat; left:0; top:50%;}
+.top-bnr .bnr_btn_right{ background: url(../img/bnr_btn_right1.png) 0 0 no-repeat; right:0; top:50%;}
+.top-box{ width: 960px; height: 145px; margin-top: 9px;}
+.top-box li{ float: left; width: 182px; margin-left: 10px;}
+.fashion{ width: 100%; min-width: 1200px; height: 415px; margin-top: 45px;}
+.title{ height: 21px; }
+.title h2{ float: left; font-size: 20px; background: #fff; font-weight: bold; color: #808080;}
+.title span{ font-weight: normal; font-size: 12px; color: #999; padding: 0 5px;}
+.title .operate{ color: #666; text-align: right; border-bottom: 1px solid #ededed;  padding-bottom: 5px;}
+.title .operate a{ width: 72px; padding-right: 10px; background: url(../img/arrows.png) 77px 3px no-repeat; display: inline-block;}
+.content{ margin-top: 18px; overflow: hidden;}
+.fashion .content ul{ width: 1221px;}
+.fashion .content ul li{ float: left; width: 387px; height: 376px;margin-right: 20px; overflow: hidden;}
+.fashion .content ul li a{ float: left;}
+.fashion .fash-l{ margin-right: 2px;}
+.fashion .fash-r{ margin-bottom: 2px;}
+.friday{ width: 100%; min-width: 100px; height: 220px; margin-top: 47px;}
+.friday .content ul{ width: 1220px;}
+.friday .content ul li{ float: left; width: 183px; height: 183px; margin-right: 20px;}
+.new{ width: 100%; min-width: 1200px; height: 910px; margin-top: 25px;}
+.new .content ul{ width: 1221px;}
+.new .content ul li{ float: left; width: 224px; height: 394px; margin-right: 20px; margin-bottom: 42px;}
+.new .content ul li .pic{ width: 224px; height: 340px;}
+.desc{ margin-top: 15px; line-height: 20px;}
+.price{ float: left; font-size: 18px; color: #f69;}
+.like{ float: right; padding-left: 20px; background: url(../img/mls_icons2.png) 0 -23px no-repeat;}
+.goods{ float: left;width: 224px; height: 12px; font-size: 12px; margin-top: 7px; line-height: 12px;}
+.star{ width: 100%; min-width: 1200px; height:419px; margin-top: 6px; }
+.star .content ul{ width: 1221px;}
+.star .content ul li{ float: left; width: 386px; height: 380px; margin-right: 20px;}
+.star .content ul li .pic{ width: 386px; height: 257px;}
+.star .content ul li .desc{ margin-top: 20px; }
+.ori-price{ float: left; text-decoration: line-through; margin-left: 20px;}
+.price span{ font-size: 12px;}
+.tit{ font-size: 13px; color: #333; height: 38px; line-height: 38px;}
+.subtit{ height: 48px; line-height: 24px; color: #999; font-size: 12px;}
+.beauty{ width: 100%; min-width: 1200px; height: 567px; margin-top: 41px;}
+.beauty .content ul{ width: 1221px;}
+.beauty .content ul li{ float: left; width: 386px; height: 528px; margin-right: 20px;}
+.beauty .content ul li .pic{ width: 386px; height: 386px;}
+.beauty .content ul li .desc{ margin-top: 20px; }
+.tag{ width: 346px; padding-left: 40px; background: url(../img/mls_icons2.png) 0 -2px no-repeat; height: 20px; line-height: 20px;}
+.tag a{ float: left; padding-right: 12px; color: #f69;}
+.shop{ width: 100%; min-width: 1200px; height: 510px; margin-top: 46px;}
+.shop .content ul{ width: 1221px;}
+.shop .content ul li{ float: left; width: 386px; height: 426px; margin-right: 20px;}
+.shop .content ul li .pic{ width: 386px; height: 333px;}
+.shop .content ul li .tit{ font-size: 22px; color: #333; height: 25px; text-align: center; line-height: 25px;margin-top: 15px; font-weight: bold;}
+.shop .content ul li .subtit{ height: 25px; line-height: 25px; text-align: center;}
+.shop .content ul li .more{height: 25px; line-height: 25px; text-align: center; }
+.shop .content ul li .more i{ padding-right: 20px; color: #f69;}
+.guess{ width: 100%; min-width: 1200px; height: 910px; margin-top: 46px;}
+.guess .content ul{ width: 1221px;}
+.guess .content ul li{ float: left; width: 224px; height: 394px; margin-right: 20px; margin-bottom: 42px;}
+.guess .content ul li .pic{ width: 224px; height: 340px;}
+.guess .title .operate a{ padding-right: 20px; background: url(../img/change.png) 77px 1px no-repeat;}
+.com-foot{ width: 100%; min-width: 1200px; height: 286px; padding-top: 30px; margin-top: 35px;background: #f5f5f5; border-top: 1px solid #ddd;}
+.com-foot .inner{ width: 1200px; height: 185px;}
+.com-foot .inner li{ float: left; margin-right: 50px; overflow: hidden;}
+.com-foot .tel-ico{ width: 36px; height: 40px; background: url(../img/mls_icons.png) 0 -111px no-repeat; float: left;}
+.com-foot .custem{ padding-left: 48px; line-height: 25px;}
+.com-foot .tel{ font-size: 20px;}
+.com-foot .inner h4{ font-size: 16px; line-height: 28px; font-weight: bold;}
+.com-foot .inner a{float: left; line-height: 28px;}
+.com-foot .inner span{ width: 16px; height: 16px; margin-top: 5px; margin-right: 5px; background: url(../img/mls_icons.png) no-repeat; float: left;}
+.com-foot .inner .i-sina{ background-position:0 -21px;  }
+.com-foot .inner .i-qzone{ background-position:-73px -21px;  }
+.com-foot .inner .i-qwb{ background-position:-49px -21px;  }
+.com-foot .inner img{ width: 115px; height: 115px; margin-top: 13px;}
+.friendlink{ border-top: 1px solid #e6e6e6; line-height: 20px; padding: 5px 10px;}
+.link-slide{ height: 20px; line-height: 20px; width: 800px;}
+.link-slide li{ float: left; line-height: 20px;}
+.record{ border-top: 1px solid #e6e6e6; line-height: 22px; height: 54px; padding-top: 15px; }
+

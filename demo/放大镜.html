@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		*{ margin: 0; padding: 0; }
+		body{ background: url(img/bgslider-1.jpg); background-size: cover; }
+		#con{ width: 400px; height: 400px; position: relative; }
+		#small, #small img{ width: 400px; height: 400px;  }
+		#small span{ width: 200px; height: 200px; position: absolute; left: 0; top: 0; background: #000; opacity: 0.6; filter: alpha(opacity=60); cursor: move; display: none; }
+		#big{ width: 400px; height: 400px; position: absolute; left: 410px; top: 0; overflow: hidden; display: none; }
+		#big img{ position: absolute; left: 0; top: 0; }
+	</style>
+	<script>
+		window.onload =function(){
+			var oSmall = document.getElementById('small');
+			var oMask = document.getElementById('mask');
+			var oBig = document.getElementById('big');
+			var oImg = oBig.getElementsByTagName('img')[0];
+
+			oSmall.onmouseover =function(){
+				oMask.style.display='block';
+				oBig.style.display='block';
+			}
+			oSmall.onmouseout =function(ev){
+				var oEvent = ev||event;
+				var to = oEvent.toElement || oEvent.relatedElement;
+				oMask.style.display='none';
+				oBig.style.display='none';
+			}
+			oSmall.onmousemove =function(ev){
+				var oEvent = ev||event;
+				// 获取鼠标的坐标
+				var x = oEvent.clientX - oMask.offsetWidth/2;
+				var y = oEvent.clientY - oMask.offsetHeight/2;
+				document.title = x;
+				// 判断范围（防溢出）
+				if(x<=0){
+					x=0;
+				};
+				if(x>=oSmall.offsetWidth - oMask.offsetWidth){
+					x=oSmall.offsetWidth - oMask.offsetWidth;
+				};
+				if(y<=0){
+					y=0;
+				};
+				if(y>=oSmall.offsetHeight - oMask.offsetHeight){
+					y=oSmall.offsetHeight - oMask.offsetHeight;
+				};
+				oMask.style.top=y+'px';
+				oMask.style.left=x+'px';
+				oImg.style.left= - oMask.offsetLeft*(oImg.offsetWidth - oBig.offsetWidth)/(oSmall.offsetWidth - oMask.offsetWidth)+'px';
+				oImg.style.top= - oMask.offsetTop*(oImg.offsetHeight - oBig.offsetHeight)/(oSmall.offsetHeight - oMask.offsetHeight)+'px';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="con">
+		<div id="small">
+			<img src="image/car.png" alt="" />
+			<span id="mask"></span>
+		</div>
+		<div id="big">
+			<img src="image/car.png" alt="" />
+		</div>
+	</div>
+</body>
+</html>

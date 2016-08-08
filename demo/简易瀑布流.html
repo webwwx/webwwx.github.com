@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		*{ margin: 0; padding: 0; }
+		li{ list-style: none; }
+		ul{ float: left; width: 300px; margin: 10px; border: 1px solid #000;}
+		li{ width: 280px; margin: 10px; background: #ccc; }
+		img{ width: 100%; height: 100%; }
+		#btn{ width: 60px; height: 60px; text-align: center; line-height: 60px; position: fixed; right: 0px; bottom: 60px; display: none; opacity: 0.7; filter: alpha(opacity=70); background: #ccc; font-size: 12px; border-radius: 50px;}
+	</style>
+	<script>
+		function rnd(n,m){
+			return parseInt(Math.random()*(m-n)+n);
+		}
+		window.onload =function(){
+			;(function(){
+				var oBox = document.getElementById('box');
+				var aUl = oBox.children;
+				var oBtn = document.getElementById('btn');
+				var timer = null;
+				var bSys = false;
+				// 创建li
+				function createLi(){
+					var oLi = document.createElement('li');
+					var oImg = document.createElement('img');
+					oLi.appendChild(oImg);
+					oLi.style.height=rnd(100,500)+'px';
+					oImg.src='image/'+rnd(1,51)+'.jpg';
+					return oLi;
+				}
+				// 添加li
+				function createli30(){
+					for (var i = 0; i < 30; i++) {
+						var arr = [];
+						for (var j = 0; j < aUl.length; j++) {
+							// aUl[j] = arr[j];
+							arr[j] = aUl[j];
+						}
+
+						arr.sort(function(ul1,ul2){
+							return ul1.offsetHeight - ul2.offsetHeight;
+						});
+						// 往最短的ul里面去添加li
+						arr[0].appendChild(createLi());
+					}
+				}
+				createli30();
+				window.onscroll =function(){
+					var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+					var clientH = document.documentElement.clientHeight;
+					var scrollBottom = scrollT + clientH;
+					if(scrollBottom >= document.body.scrollHeight - 500){
+						createli30();
+					}
+					if(bSys){
+						clearInterval(timer);
+					}
+					bSys=true;
+					if(scrollT>100){
+						oBtn.style.display='block';
+					}else{
+						oBtn.style.display='none';
+					}
+				}
+				oBtn.onclick =function(){
+					var start = document.documentElement.scrollTop || document.body.scrollTop;
+					var iTarget = 0;
+					var dis = iTarget-start;
+					var count = Math.floor(1000/30);
+					var n = 0;
+					timer = setInterval(function(){
+						n++;
+						var a = n/count;
+						var cur = start+dis*a;
+						bSys=false;
+						document.documentElement.scrollTop = document.body.scrollTop = cur;
+						if(n==count){
+							clearInterval(timer);
+						}
+					},30)
+				}
+			})();
+			// ;(function(){
+				
+			// 	window.onscroll =function(){
+			// 		var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
+					
+			// 	}
+				
+			// })();
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+	</div>
+	<div id="btn">回到顶部</div>
+</body>
+</html>

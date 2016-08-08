@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+		*{ margin: 0; padding: 0 }
+		li{ list-style: none; }
+		html{ overflow: hidden; }
+		body{ background: #000; }
+		img{ vertical-align: top; width: 100%; height: 100%;}
+		#ul1{ position:relative; width:133px; height:200px; margin:150px auto;
+        	transform-style:preserve-3d;
+        	transform: perspective(800px) rotateX(-10deg) rotateY(0deg);
+        }
+        #ul1 li{ position:absolute; left:0; top:0; width:100%; height:100%;
+	        transition:1s all ease; box-shadow: 0 0 10px #fff; 
+	        -webkit-box-reflect:below 10px -webkit-linear-gradient(rgba(0,0,0,0) 40%,rgba(0,0,0,1));
+	        border-radius:20px; overflow:hidden;
+	        transform: rotateY(0deg) translateZ(0px);
+        }
+        #ul1 li img{ width:100%; }
+	</style>
+	<script>
+		window.onload =function(){
+			var oUl = document.getElementById("ul1");
+	        var aLi = oUl.children;
+	        var len = aLi.length;
+	        for (var i = 0; i < len; i++) {
+	        	aLi[i].style.transition='1s all ease '+200*(len-i)+'ms';
+	        	aLi[i].style.transform='rotateY('+360/len*i+'deg) translateZ(350px)';
+	        }
+	        aLi[0].addEventListener("transitionend",function(){
+				setMove();
+				setOpacity();	
+			},false);
+
+	        var bTop=bBot=bLeft=bRight=false;
+			var x = 100;
+			var y = 0;
+			setInterval(function(){
+				if(bLeft){
+					y -= 10;
+				}
+				if(bRight){
+					y += 10;
+				}
+				if(bTop){
+					x -= 10;
+				}
+				if(bBot){
+					x += 10;
+				}
+				if(x>300){
+					x=300;
+				}else if(x<-300){
+					x=-300;
+				}
+				oUl.style.transform='perspective(800px) rotateX('+-x/10+'deg) rotateY('+y/10+'deg)';
+			},30);
+			function setOpacity(){
+				for(var i = 0; i < len; i++){				
+					var d = Math.abs(360/len*i + y/10)%360; 
+					if(d > 180){
+						d = 360 - d;
+					}					
+					d = (180 - d)/180;				
+					d < 0.3 && (d = 0.3);		
+					aLi[i].style.opacity = d;
+			    }
+			}
+			// 键盘移动
+			document.onkeydown =function(ev){
+				var keyCode = ev.keyCode;
+				if(keyCode==37){
+					bLeft=true;;
+				}
+				if(keyCode==38){
+                    bTop=true;
+				}
+				if(keyCode==39){
+					bRight=true;
+				}
+				if(keyCode==40){
+					bBot=true;
+				}
+
+			}
+			document.onkeyup =function(ev){
+				var keyCode = ev.keyCode;
+				if(keyCode==37){
+					bLeft=false;;
+				}
+				if(keyCode==38){
+                    bTop=false;
+				}
+				if(keyCode==39){
+					bRight=false;
+				}
+				if(keyCode==40){
+					bBot=false;
+				}
+				setOpacity();
+			}
+			// 鼠标移动
+			var timer = null;
+			var speedX = 0;
+			var speedY = 0;
+			var lastX = 0;
+			var lastY = 0;
+			function setMove(){
+				for(var i = 0; i < len; i++){
+					aLi[i].style.transition = "1s all ease";
+				}
+			}
+			function clearMove(){
+				for(var i = 0; i < len; i++){
+					aLi[i].style.transition = "none";
+					console.log(aLi[i].style.transition);
+				}
+			}
+
+			document.onmousedown =function(ev){
+				clearMove();
+				var disX = ev.clientX - y;
+				var disY = ev.clientY - x;
+				document.onmousemove =function(ev){
+					y = ev.clientX - disX;
+					x = ev.clientY - disY;
+					if(x>300){
+						x=300;
+					}else if(x<-300){
+						x=-300;
+					}
+					oUl.style.transform='perspective(800px) rotateX('+-x/10+'deg) rotateY('+y/10+'deg)';
+
+					speedX = x - lastX;
+					speedY = y - lastY;
+					lastX = x;
+					lastY = y;
+					
+					setOpacity();
+				}
+				document.onmouseup =function(){
+					document.onmousemove=null;
+					document.onmouseup=null;
+					clearInterval(timer);
+					timer = setInterval(function(){
+						
+						x += speedX;
+						y += speedY;
+						
+						speedX *= 0.8;
+						speedY *= 0.8;
+						
+						if(Math.abs(speedX) < 1){
+							speedX = 0;
+						}
+						if(Math.abs(speedY) < 1){
+							speedY = 0;
+						}
+						
+						if(speedX == 0 && speedY == 0){
+							clearInterval(timer);
+						} 
+						oUl.style.transform = "perspective(800px) rotateX("+-x/10+"deg) rotateY("+y/10+"deg)";
+						
+					},30);
+					oUl.releaseCapture && oUl.releaseCapture();
+				}
+				oUl.setCapture && oUl.setCapture();
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li><img src="image/1.jpg" /></li>
+		<li><img src="image/2.jpg" /></li>
+		<li><img src="image/3.jpg" /></li>
+		<li><img src="image/4.jpg" /></li>
+		<li><img src="image/5.jpg" /></li>
+		<li><img src="image/6.jpg" /></li>
+		<li><img src="image/7.jpg" /></li>
+		<li><img src="image/8.jpg" /></li>
+		<li><img src="image/9.jpg" /></li>
+		<li><img src="image/10.jpg" /></li>
+		<li><img src="image/11.jpg" /></li> 
+	</ul>
+</body>
+</html>

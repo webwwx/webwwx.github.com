@@ -1,0 +1,62 @@
+body{ background: #f5f5f5; }
+.container{ max-width: 640px; min-width: 320px; margin:0 auto; }
+.header{  padding: 0 40px; height: 30px; position: relative; margin-top: 7px;}
+.logo{ width: 40px; height: 30px; background: url(../image/logo.png) no-repeat 0 0; position: absolute; top: 0; left: 0;}
+.search{ width: 100%; }
+.search input{ width: 100%; background: #ebebeb; height: 30px; border-radius: 5px; padding-left: 5px;  box-sizing: border-box;}
+.search i{ width: 17px; height: 16px; background: url(../image/sou.png) no-repeat 0 0; position: absolute; right: 45px; top: 7px; }
+.fenlei{ width: 40px; height: 30px; background: url(../image/fenlei.png) no-repeat 0 0; position: absolute; right: 0; top: 0; cursor: pointer;	 }
+.banner{ background: #fff; padding: 4px; margin-top: 9px; border: 1px solid #dadada;}
+.banner img { width: 100%;}
+.banner-list{ width: 100%;}
+.banner-list ul{ height: 60px; background: #fff;}
+.banner-list li{ width: 25%; position: relative; float: left; height: 55px;  font-size: 12px; text-align: center;}
+.banner-list li a{ color: #7f7f7f;}
+.banner-list li b{ width: 1px; height: 28px; background: #dadada; position: absolute; right: 0; top: 17px; }
+.banner-list li:last-child b{ display: none;}
+.banner-list li i{ width: 24px; height: 24px; display: block; margin: 11px auto 2px; background-size: 100% auto;}
+.banner-list i.gwc{ background: url(../image/gwc.png) 0 0 no-repeat;  }
+.banner-list i.cz{ background: url(../image/cz.png) 0 0 no-repeat;  }
+.banner-list i.jp{ background: url(../image/jp.png) 0 0 no-repeat;  }
+.banner-list i.wd{ background: url(../image/wd.png) 0 0 no-repeat;  }
+.wrap{ background:#fff; margin-top: 10px; border:1px solid #dadada;}
+.title{ height: 32px; line-height: 32px;}
+.title i{ width: 3px; height: 12px; background: #d8505c; margin-left: 7px; margin-top: 9px; float: left;}
+.title h2{ margin-left: 7px; color: #7f7f7f; float: left; font-size: 14px;}
+.title .time{ float: left; margin-left: 9px;}
+.title .time span{ width: 15px; height: 15px; line-height: 15px; background: #5d5d5d; color: #fff; display: inline-block; margin-top: 9px; text-align: center; margin-right: 2px; float: left;}
+.title .time b{ float: left; height: 15px; line-height: 15px; margin: 8px 3px 0 1px;}
+.goods{ border-top: 1px solid #dadada; background: #fff; }
+.goods ul li{ float: left; width: 33%; padding-bottom: 9px; box-sizing: border-box;}
+.goods img{ width: 100%;}
+.goods ul li:nth-child(2){  border: solid #dadada; border-width: 0 1px;}
+.goods ul li dt{ color: #d8505c; text-align: center; font-size: 12px; height: 12px; line-height: 12px;}
+.goods ul li dd{width: 58.8%; background: #d8505c; color: #fff; height: 15px; line-height: 15px; text-align: center; margin: 10px auto 0px}
+.wrap-banner{ padding:6px 5px 7px; }
+.wrap-banner img{ width: 100%; }
+.tupian{ background:#fff; }
+.tupian-left{ width:50%; float: left; border-right:1px solid #dadada; box-sizing: border-box; overflow: hidden;}
+.tupian-left img{ width:100%; }
+.tupian-right{ width:50%; float: left; }
+.tupian-two{ height: 50%; overflow: hidden; }
+.tupian-two:last-child{ border-top:1px solid #dadada; }
+.tupian-right img{ width:100%; }
+.tupian-left-bl{ border-right: none; border-left:1px solid #dadada; }
+.zhutiguan{ width: 100%; padding-left: 8px; box-sizing: border-box;}
+.zhutiguan li{ width: 50%; float: left; padding-right: 8px; padding-bottom: 8px; box-sizing: border-box;}
+.zhutiguan li img{ width: 100%;}
+.footer {width: 100%; height: 140px; margin-top: 11px;  background: #fff; height: 140px;border:1px solid #dadada;}
+.foot-title {width: 100%;height: 32px;border-bottom: 1px solid #e1e1e1;}
+.foot-title .denglu {width: 66px;height: 32px;line-height: 32px;padding-left: 18px;float: left;}
+.foot-title .fankui {width: 94px;height: 32px;line-height: 32px;padding-right: 18px;float: right;}
+.foot-title a {color: #666;}
+.foot-title a:hover {color: #e6242b;}
+.foot-con { width: 100%; height: 105px;}
+.foot-con span{ width: 100%; height: 20px; line-height: 20px; margin-top: 9px; text-align: center; display: block; }
+.foot-con div {width: 100%; height: 20px; text-align: center; margin-top: 9px;}
+.foot-con a { color: #666;}
+.foot-con a:hover {color: #e6242b;}
+.foot-con ul .red {color: #e6242b;}
+.foot-con p {height: 12px;line-height: 12px;margin-top: 5px;color: #666; text-align: center;}
+
+
