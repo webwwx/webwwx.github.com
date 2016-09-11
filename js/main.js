@@ -120,7 +120,7 @@ window.onload =function(){
 			}
 			
 		}
-		setInterval(show,3000);
+		setInterval(show,2500);
 	})();
 	// 轮播图
 	;(function(){

@@ -57,9 +57,9 @@ p{ text-indent: 4em; }
   color: #fdfdfd; font-size: 18px; text-align: center;
   transition: 0.5s all ease;
 }
-.profile-title:hover{ color: #5494dc; font-size: 20px; }
+.profile-title:hover{ color: #5494dc; }
 .profile-email{ font-size: 16px; text-align: center;transition: 0.5s all ease;}
-.profile-email:hover{ color: #5494dc;font-size: 18px; }
+.profile-email:hover{ color: #5494dc; }
 .main-nav{ margin: 30px 0; }
 .navigation li{ display: block; }
 .navigation li:hover{ background: #495461; }
@@ -116,6 +116,7 @@ p{ text-indent: 4em; }
 }
 .demo{ padding-top: 30px; }
 .demo-con{ margin-top: 40px; height: 444px; }
+.demo p{ text-shadow: 2px 2px 3px #ccc; }
 .demo-con li{ width: 290px; height: 220px; 
   float: left; margin-right: 2px; margin-bottom: 2px; 
   position: relative; overflow: hidden; 
@@ -136,11 +137,12 @@ p{ text-indent: 4em; }
  color: #fff; border: 2px solid #ccc; border-radius: 15px;
 }
 .demo-con span p{ text-indent: 0; font-size: 13px; 
-  line-height: 20px; color: #fff;
+  line-height: 20px; color: #fff; 
 }
 .container{ width:650px; margin-left: 100px; }
 .hextit{ margin-left: -100px; }
-.hextxt{ margin-bottom: 50px; margin-left: -100px; }
+.hextxt{ margin-bottom: 50px; margin-left: -100px; 
+  text-shadow: 2px 2px 3px #ccc;  }
 .hex{width:150px; height:86px; background-color:#ccc;
   background-repeat:no-repeat; background-position:50% 50%;
   -webkit-background-size:auto 173px; position:relative;
